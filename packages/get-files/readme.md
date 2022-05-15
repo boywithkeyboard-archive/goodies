@@ -8,8 +8,8 @@
 #### Installation
 
 ```sh-session
-npm i get-files
-yarn add get-files
+npm i @goodies/get-files
+yarn add @goodies/get-files
 ```
 
 #### Usage
