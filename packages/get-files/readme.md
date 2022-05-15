@@ -15,7 +15,7 @@ yarn add get-files
 #### Usage
 
 ```js
-import getFiles from 'get-files-recursively'
+import getFiles from '@goodies/get-files'
 
 for await (let file of getFiles('path/to/directory')) {
   // do something
