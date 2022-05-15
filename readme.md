@@ -2,4 +2,4 @@
 
 **A collection of useful packages.**
 
-- [`get-files`](/get-files)
+- [`get-files`](/packages/get-files)
