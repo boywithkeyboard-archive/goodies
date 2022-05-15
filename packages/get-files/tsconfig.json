@@ -1,20 +1,6 @@
 {
+  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "target": "esnext",
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "rootDir": "src",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
-    "alwaysStrict": true,
-    "strict": true,
-    "noImplicitReturns": true,
-    "noImplicitOverride": true,
-    "removeComments": true,
-    "noEmit": true,
-    "skipLibCheck": true,
-    "newLine": "crlf",
     "types": [
       "node"
     ]
