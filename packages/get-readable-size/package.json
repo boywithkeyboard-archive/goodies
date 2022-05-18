@@ -1,0 +1,47 @@
+{
+  "name": "@goodies/get-readable-size",
+  "version": "1.0.3",
+  "description": "A straightforward package to get the readable variant of a (disk) size.",
+  "main": "dist/cjs/index.js",
+  "module": "dist/mjs/index.js",
+  "exports": {
+    "import": "./dist/mjs/index.js",
+    "require": "./dist/cjs/index.js"
+  },
+  "types": "types/index.d.ts",
+  "scripts": {
+    "build:cjs": "esbuild src/index.ts --bundle --minify --format=cjs --legal-comments=none --platform=node --target=node16 --outfile=dist/cjs/index.js",
+    "build:mjs": "esbuild src/index.ts --bundle --minify --format=esm --legal-comments=none --platform=node --target=node16 --outfile=dist/mjs/index.js",
+    "build": "npm run build:cjs && npm run build:mjs",
+    "publish:patch": "npm run build && npm version patch && npm publish",
+    "publish:minor": "npm run build && npm version minor && npm publish",
+    "publish:major": "npm run build && npm version major && npm publish"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://ko-fi.com/azury"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azurydev/goodies.git"
+  },
+  "keywords": [
+    "goodies",
+    "get-readable-size"
+  ],
+  "author": "Azury <hello@azury.dev> (https://azury.dev)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/azurydev/goodies/issues"
+  },
+  "homepage": "https://github.com/azurydev/goodies#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.33",
+    "esbuild": "^0.14.39",
+    "typescript": "^4.6.4"
+  },
+  "engines": {
+    "node": ">=16",
+    "npm": ">=8"
+  }
+}
