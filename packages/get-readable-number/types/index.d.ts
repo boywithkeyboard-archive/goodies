@@ -1,3 +1,3 @@
-declare const getReadableNumber: (directory: string) => Promise<string>
+declare const getReadableNumber: (number: number) => Promise<string>
 
 export default getReadableNumber
