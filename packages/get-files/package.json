@@ -1,21 +1,21 @@
 {
   "name": "@goodies/get-files",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A straightforward package to get files recursively in a directory.",
-  "main": "./dist/cjs/index.js",
+  "main": "dist/cjs/index.js",
   "module": "dist/mjs/index.js",
   "exports": {
     "import": "./dist/mjs/index.js",
     "require": "./dist/cjs/index.js"
   },
-  "types": "./types/index.d.ts",
+  "types": "types/index.d.ts",
   "scripts": {
     "build:cjs": "esbuild src/index.ts --bundle --minify --format=cjs --legal-comments=none --platform=node --target=node16 --outfile=dist/cjs/index.js",
     "build:mjs": "esbuild src/index.ts --bundle --minify --format=esm --legal-comments=none --platform=node --target=node16 --outfile=dist/mjs/index.js",
     "build": "npm run build:cjs && npm run build:mjs",
-    "publish:patch": "npm version patch && npm run build && npm publish",
-    "publish:minor": "npm version minor && npm run build && npm publish",
-    "publish:major": "npm version major && npm run build && npm publish"
+    "publish:patch": "npm run build && npm version patch && npm publish",
+    "publish:minor": "npm run build && npm version minor && npm publish",
+    "publish:major": "npm run build && npm version major && npm publish"
   },
   "funding": {
     "type": "individual",
