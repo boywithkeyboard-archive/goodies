@@ -1,4 +1,4 @@
-## get-files
+## is-same-day
 
 #### System Requirements
 
@@ -8,16 +8,20 @@
 #### Installation
 
 ```sh-session
-npm i @goodies/get-files
-yarn add @goodies/get-files
+npm i @goodies/is-same-day
+yarn add @goodies/is-same-day
 ```
 
 #### Usage
 
 ```js
-import getFiles from '@goodies/get-files'
+import isSameDay from '@goodies/is-same-day'
 
-for await (let file of getFiles('path/to/directory')) {
-  // do something
-}
+const today = new Date()
+const yesterday = new Date()
+
+yesterday.setDate(today.getDate() - 1)
+
+console.log(await isSameDay(today, today)) // true
+console.log(await isSameDay(today, yesterday)) // false
 ```

@@ -1,6 +1,6 @@
 {
   "name": "@goodies/get-readable-number",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A straightforward package to get the readable variant of a number.",
   "main": "dist/cjs/index.js",
   "module": "dist/mjs/index.js",

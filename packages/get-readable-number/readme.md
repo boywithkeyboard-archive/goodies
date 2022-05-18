@@ -1,4 +1,4 @@
-## get-files
+## get-readable-number
 
 #### System Requirements
 
@@ -8,16 +8,16 @@
 #### Installation
 
 ```sh-session
-npm i @goodies/get-files
-yarn add @goodies/get-files
+npm i @goodies/get-readable-number
+yarn add @goodies/get-readable-number
 ```
 
 #### Usage
 
 ```js
-import getFiles from '@goodies/get-files'
+import getReadableNumber from '@goodies/get-readable-number'
 
-for await (let file of getFiles('path/to/directory')) {
-  // do something
-}
+const number = await getReadableNumber(3900000)
+
+console.log(number) // 3.9 M
 ```

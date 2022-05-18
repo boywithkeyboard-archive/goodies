@@ -1,6 +1,6 @@
 {
   "name": "@goodies/is-same-day",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple package to check whether two dates represent the same day.",
   "main": "dist/cjs/index.js",
   "module": "dist/mjs/index.js",
