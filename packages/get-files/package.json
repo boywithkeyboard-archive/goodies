@@ -1,6 +1,6 @@
 {
   "name": "@goodies/get-files",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A straightforward package to get files recursively in a directory.",
   "main": "dist/cjs/index.js",
   "module": "dist/mjs/index.js",
